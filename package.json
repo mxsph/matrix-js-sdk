@@ -55,7 +55,6 @@
     ],
     "dependencies": {
         "@babel/runtime": "^7.12.5",
-        "@matrix-org/matrix-sdk-crypto-js": "^0.1.0-alpha.5",
         "another-json": "^0.2.0",
         "bs58": "^5.0.0",
         "content-type": "^1.0.4",
@@ -126,6 +125,14 @@
         "typedoc": "^0.23.20",
         "typedoc-plugin-missing-exports": "^1.0.0",
         "typescript": "^4.5.3"
+    },
+    "peerDependencies": {
+        "@matrix-org/matrix-sdk-crypto-js": "^0.1.0-alpha.5"
+    },
+    "peerDependenciesMeta": {
+        "@matrix-org/matrix-sdk-crypto-js": {
+            "optional": true
+        }
     },
     "jest": {
         "testEnvironment": "node",
